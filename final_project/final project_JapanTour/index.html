@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan Tours</title>
+    <meta name="description" content="Advertising the tours in Japan." />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Jing-Xian Wu" />
+    <!--icon-->
+    <link rel="shortcut icon" href="./images/Logo.svg" />
+    <link rel="bookmark" href="./images/Logo.svg" />
+    <!--cdnjs(font-awesome)-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!--normalization-->
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <!--css-->
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!--background image for whole page-->
+    <img class="fixed-image" src="./images/Fuji_main.jpg" alt="fixed-image" />
+    <header>
+      <input id="burger" type="checkbox" />
+      <label for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <nav>
+        <div>
+          <a href="./index.html"><img src="./images/Logo.svg" alt="logo" /></a>
+          <h1>Japan Tours</h1>
+        </div>
+        <menu>
+          <li>
+            <a href="#"><i class="fa-solid fa-plane"></i> Home</a>
+          </li>
+          <li>
+            <a href="./product.html"
+              ><i class="fa-solid fa-right-to-bracket"></i> Product</a
+            >
+          </li>
+          <li>
+            <a href="./about.html"><i class="fa-solid fa-book"></i> About</a>
+          </li>
+          <li>
+            <a href="./contact.html"
+              ><i class="fa-regular fa-address-book"></i> Contact</a
+            >
+          </li>
+        </menu>
+      </nav>
+    </header>
+
+    <main>
+      <section class="background-img">
+        <div class="filter"></div>
+        <div class="slider">
+          <h3>Amazing Vacation in</h3>
+          <h3>Japan</h3>
+        </div>
+      </section>
+
+      <section class="info-circles">
+        <h3>Features</h3>
+        <div class="circles">
+          <div class="circle">
+            <img src="./images/Hokkaido.jpg" alt="Hokkaido snow scene" />
+            <p>Hokkaido snow scene</p>
+          </div>
+          <div class="circle">
+            <img src="./images/sushi.jpg" alt="Authentic Japanese food" />
+            <p>Authentic Japanese food</p>
+          </div>
+          <div class="circle">
+            <img src="./images/fuji_circle.jpg" alt="Mt.Fuji" />
+            <p>Mt. Fuji and Hot Springs</p>
+          </div>
+          <div class="circle">
+            <img
+              src="./images/Kiyomizu_Temple.jpg"
+              alt="Kyoto Kiyomizu Temple"
+            />
+            <p>Kyoto Kiyomizu Temple</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="empty-container">
+        <h3>Plan your trip in Japan NOW!</h3>
+      </section>
+
+      <section class="google-map">
+        <h3>Location of Japan</h3>
+        <p>
+          Japan is geographically part of Northeast Asia, bordered by the
+          Pacific Ocean to the east, the Sea of Japan, the Strait of Korea, and
+          the East China Sea to the west, and the Eurasian continent of Siberia,
+          the Korean Peninsula, and China (not directly connected).
+        </p>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15594194.0704901!2d127.9873831253445!3d41.450030073336194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2z5pel5pys!5e0!3m2!1sen!2sca!4v1667951663225!5m2!1sen!2sca"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="contact">
+        <img src="./images/Logo.svg" alt="logo" />
+        <h3>Japan Tours</h3>
+        <p>
+          <a href="tel:1-866-000-0000">1-866-000-0000</a> | send us a message
+        </p>
+        <form action="#">
+          <input
+            id="e-mail"
+            type="email"
+            name="Email"
+            placeholder="EMAIL ADDRESS"
+          />
+          <button>SEND</button>
+        </form>
+      </section>
+      <section class="links">
+        <a href="#"><img src="./Icons/facebook.svg" alt="facebook" /></a>
+        <a href="#"><img src="./Icons/instagram.svg" alt="instagram" /></a>
+        <a href="#"><img src="./Icons/twitter.svg" alt="twitter" /></a>
+        <a href="#"><img src="./Icons/youtube.svg" alt="youtube" /></a>
+      </section>
+    </footer>
+
+    <!--slider-->
+    <script>
+      setInterval(() => {
+        let topImg = document.querySelector("section.background-img");
+
+        if (
+          topImg.style.backgroundImage ==
+          'url("../images/Japanese Cherry Blossoms.jpg")'
+        ) {
+          topImg.style.backgroundImage = 'url("../images/Old Town Kyoto.jpg")';
+        } else if (
+          topImg.style.backgroundImage == 'url("../images/Old Town Kyoto.jpg")'
+        ) {
+          topImg.style.backgroundImage = 'url("../images/Osaka.jpg")';
+        } else {
+          topImg.style.backgroundImage =
+            'url("../images/Japanese Cherry Blossoms.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
